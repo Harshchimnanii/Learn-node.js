@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p id="message">Click the button to see magic ✨</p>
+    <button onclick="changeMessage()">Click Me</button>
+
+    <script>
+        function changeMessage() {
+            const msg = document.getElementById("message");
+            msg.innerText = "Button clicked! 🎉 You just made this page do something.";
+        }
+    </script>
+</body>
+</html>
