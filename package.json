@@ -1,5 +1,23 @@
 {
+  "name": "learn-node",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Harshchimnanii/Learn-node.js#readme",
+  "bugs": {
+    "url": "https://github.com/Harshchimnanii/Learn-node.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshchimnanii/Learn-node.js.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
-    "node": "^25.7.0"
+    "lodash": "^4.17.23"
   }
 }
