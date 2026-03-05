@@ -5,20 +5,20 @@ const app = express();
 app.listen(3000);
 //bakwass cheeze
 
-app.get('/' , (req , res) => {
-    // res.send(`<p>Hello bacchoo</p><p>krishna is love</p>`);
-});
-app.get('/hello' , (req , res) => {
-    // res.send(`<p> This is what i want </p>`);
-});
+// app.get('/' , (req , res) => {
+//     // res.send(`<p>Hello bacchoo</p><p>krishna is love</p>`);
+// });
+// app.get('/hello' , (req , res) => {
+//     // res.send(`<p> This is what i want </p>`);
+// });
 // app.get('/about' , (req , res) => {
-    // res.send(`<p>Subscribe for more good content</p>`)
+//     res.send(`<p>Subscribe for more good content</p>`)
 // }); 
 // send a filee
 app.get('/about' , (req , res) => {
     res.sendFile('./views/about.html' , {root: __dirname})
 });
-app.get('/index' , (req , res) => {
+app.get('/' , (req , res) => {
     res.sendFile('./views/index.html' , {root: __dirname})
 });
 app.get('/login' , (req , res) => {
@@ -33,5 +33,5 @@ app.get('/login' , (req , res) => {
 
 // default case 
 app.use((req , res) => {
-    res.sendFile('./views/404.html' , {root: __dirname})
+    res.status(404).sendFile('./views/404.html' , {root: __dirname})
 });
